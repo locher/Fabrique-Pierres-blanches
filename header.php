@@ -20,6 +20,10 @@
 		
 	</head>
 	<body <?php body_class(); ?>>
+        
+        <div class="svg-wrapper" aria-hidden="true">
+			<?php echo file_get_contents(get_template_directory_uri().'/img/svg-prod/sprite/svgs.svg'); ?>
+		</div>	
 
 		<!-- wrapper -->
 		<div class="wrapper">
@@ -40,6 +44,8 @@
 						<?php html5blank_nav(); ?>
 					</nav>
 					<!-- /nav -->
+					
+                    <?php include('arabesque.php'); ?>
 
 			</header>
 			<!-- /header -->
