@@ -66,3 +66,15 @@ $breakpoints: null;
 		$i: $i+1;
 	}
 }
+
+@mixin resolution-above($ratio){
+    @media only screen and (min-resolution: $ratio){
+		@content;
+	}
+}
+
+@mixin resolution-below($ratio){
+    @media only screen and (max-resolution: $ratio){
+		@content;
+	}
+}

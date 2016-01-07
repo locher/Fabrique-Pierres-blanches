@@ -90,7 +90,7 @@
     outline: 1px solid #fff;
     outline-offset: 10px;
     
-    h1{
+    .h1{
         font-size: 5rem;
         color: $primaire;
         margin-bottom: 10px;
@@ -115,4 +115,33 @@
             transform: rotate(180deg);
         }
     }
+}
+
+.content-home{        
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    
+    h3{
+        color: $primaire;
+    }
+    
+    p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    &::before{
+		content: url('img/fleurtransparent.jpg');
+		position: absolute;
+		z-index: -1;
+		top: -46px;
+		left: 0;
+        
+        @include resolution-above("2dppx"){
+           content: url('img/fleurtransparent@2x.jpg');
+            transform-origin: 0 0;
+            transform: scale(.5);
+        }
+	}
 }
