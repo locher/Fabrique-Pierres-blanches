@@ -56,3 +56,23 @@
 .single-folio{
      width: calc(100% / 3 - 40px / 3); // 40 = 2x la gutter
 }
+
+
+// Single Galerie
+
+.single-galerie{
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+.img-folio-wrapper{
+    margin-top: 50px;
+    text-align: center;
+    
+    img{
+        margin-bottom: 30px;
+    }
+}
