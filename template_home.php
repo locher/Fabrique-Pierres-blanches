@@ -67,7 +67,15 @@
      <?php
 			$args_folio = array(
 				'post_type' => 'galerie',
-				'posts_per_page' => -1
+				'posts_per_page' => -1,
+                'meta_query' => array(
+                'relation' => 'AND',
+                    array(
+                        'key' => 'home',
+                        'value' => '1',
+                        'compare' => '=='
+                    ),
+                )
 			);
 			$folio = new WP_Query($args_folio);
 		?>
@@ -104,15 +112,19 @@
 		<?php wp_reset_query(); ?>
 		
 		<script>
-            jQuery('.wrapper-folio').isotope({
-              itemSelector: '.single-folio',
-              percentPosition: true,
-              masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: '.grid-sizer',
-                  gutter: 20
-              }
-            })
+            
+            jQuery(document).ready(function(){
+                jQuery('.wrapper-folio').isotope({
+                  itemSelector: '.single-folio',
+                  percentPosition: true,
+                  masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-sizer',
+                      gutter: 20
+                  }
+                })
+            });
+
         </script>
       
 
