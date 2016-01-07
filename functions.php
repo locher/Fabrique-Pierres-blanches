@@ -98,21 +98,20 @@ function html5blank_header_scripts()
         wp_register_script('jquery', get_template_directory_uri() . '/js/lib/jquery-1.11.3.min.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('jquery'); // Enqueue it   
         
-        wp_register_script('isotope', get_template_directory_uri() . '/js/lib/isotope.pkgd.min.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('isotope'); // Enqueue it
-    
-        
-        
-            
+         
     }
 }
 
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
+    if (is_page_template('template_home.php') OR is_page_template('template_portfolio.php')) {
+        
+        wp_register_script('isotope', get_template_directory_uri() . '/js/lib/isotope.pkgd.min.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('isotope');
+        
+        wp_register_script('script_isotope', get_template_directory_uri() . '/js/isotope.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('script_isotope'); // Enqueue it!
     }
 }
 
