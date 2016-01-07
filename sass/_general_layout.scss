@@ -9,6 +9,7 @@ html{
 
 body{
     font-size: 1.5rem;
+    color: #000;
 }
 
 .svg-wrapper{
@@ -76,5 +77,18 @@ body{
             fill: rgba(#000, .15);
         }
     }
+}
+
+.bt{
+    transition: all ease .2s;
+    display: inline-block;
+    font-family: 'chaparral-pro';
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1.2em 4em;
+    border-radius: 50px;
     
+    &:hover{
+        padding: 1.2em 4.5em;
+    }
 }

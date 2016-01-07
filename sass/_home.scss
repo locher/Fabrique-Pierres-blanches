@@ -1,0 +1,51 @@
+.slider{
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 50px 155px;
+    text-align: center;
+    outline: 1px solid rgba(#000, .15);
+    outline-offset: 10px;
+    
+    .bt{
+        background-color: #fff;
+        color: inherit;
+        position: relative;
+        top:-30px;
+    }
+}
+
+.slider-text{
+    background-color: rgba($primaire, .9);
+    padding: 50px;
+    min-width: 80%; 
+    display: inline-block;
+    text-align: center;
+    outline: 1px solid #fff;
+    outline-offset: 10px;
+    
+    h1{
+        font-size: 5rem;
+        color: #fff;
+        margin-bottom: 10p;
+    }
+    
+    p{
+        font-family: 'chaparral-pro';
+        font-size: 2.5rem;
+    }
+    
+    .arabesque{
+        svg{
+            width: 130px;
+            height: 70px;
+            
+            path{
+                fill: #fff;
+            }
+        }
+        
+        &:first-child{
+            transform: rotate(180deg);
+        }
+    }
+}

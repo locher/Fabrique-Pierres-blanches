@@ -39,7 +39,6 @@
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
-			<?php comments_template(); ?>
 
 		</article>
 		<!-- /article -->
@@ -61,7 +60,5 @@
 	</section>
 	<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
