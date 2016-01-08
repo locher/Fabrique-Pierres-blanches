@@ -1,0 +1,57 @@
+.header-offre{    
+    text-align: center;
+    margin-bottom: 50px;
+    
+    h1{
+        font-size: 5rem;
+        color: $primaire;
+        margin-bottom: 10px;
+    }
+    
+    p{
+        font-family: "chaparral-pro";
+        font-size: 2.5rem;
+    }
+}
+
+.img-offre{
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(#000, .15);
+    
+    .border-offre{
+        background-color: #ebebeb;
+    }
+}
+
+.wrapper-offres{
+    display: flex;
+    flex-wrap: wrap;
+
+    .single-presta{
+        width: calc(100% / 3 - 40px / 3);
+        margin-right: 20px;
+        margin-bottom: 75px;
+        text-align: center;
+        
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+        
+        h3{
+            font-size: 2.5rem;
+            margin: .8em 0 .4em;
+        }
+        
+        p{
+            line-height: 1.4em;
+            padding: 0 10%;
+        }
+    }
+}
+
+.img-presta{
+    padding: 10px;
+    border: 1px solid rgba(#000, .15);
+}
