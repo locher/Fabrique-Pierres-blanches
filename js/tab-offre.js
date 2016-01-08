@@ -10,10 +10,33 @@ jQuery(document).ready(function(){
 
     //
 
-    jQuery('.tab-menu').find('li').click(function(){
+    jQuery('.tab-menu').find('li').click(function(event){
+        event.stopPropagation();
        jQuery('.tab-menu').find('li').removeClass('active');
        jQuery(this).toggleClass('active');
         display_tab();
     });
+    
+    // Vérifier l'url    
+    
+    /*
+    var hashname = window.location.hash;
+
+    if(hashname == '#celine'){ //tab63
+        jQuery('.tab-content').find('.tab').hide();   
+        jQuery('.tab-content').find('.tab63').show();
+        jQuery('.tab-menu').find('li').removeClass('active');
+        jQuery('.tab-menu').find('li').attr('data-id','tab63').addClass('active');
+        
+    }
+    
+    if(hashname == '#mie'){ //tab63
+        jQuery('.tab-content').find('.tab').hide();   
+        jQuery('.tab-content').find('.tab61').show();
+        jQuery('.tab-menu').find('li').removeClass('active');
+        jQuery('.tab-menu').find('li')..addClass('active');
+    }
+    
+    */
     
 });

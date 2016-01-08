@@ -12,8 +12,8 @@
 		<?php if($offres->have_posts()): ?>
 		
 		<ul class="tab-menu">                  
-            <li class="" data-id="tab61"><a href="#">Côté <span>Mie</span></a></li>            		    
-            <li class="active" data-id="tab63"><a href="#">Côté <span>Céline</span></a></li>            		    
+            <li class="" data-id="tab61"><a href="#mie">Côté <span>Mie</span></a></li>            		    
+            <li class="active" data-id="tab63"><a href="#celine">Côté <span>Céline</span></a></li>            		    
 		</ul>
 		
 		<div class="tab-content">
