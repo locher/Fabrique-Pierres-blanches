@@ -7,12 +7,14 @@
 		    <p><?php the_field('sous-titre');?></p>
 		</div>
 		
-		<div class="img-offre">
-		    <?php $offre_img = get_field('image'); ?>
-		    <div class="border-offre">
-		        <img src="<?php echo $offre_img['url']; ?>" alt="">
-		    </div>		    
-		</div>
+        <div class="wrapper-img-offre">
+            <div class="img-offre">
+                <?php $offre_img = get_field('image'); ?>
+                <div class="border-offre">
+                    <img src="<?php echo $offre_img['url']; ?>" alt="">
+                </div>		    
+            </div>
+        </div>
 		
 		<div class="content">
 		    <?php the_content();?>

@@ -14,11 +14,15 @@
     }
 }
 
-.img-offre{
-    margin-bottom: 50px;
+.wrapper-img-offre{
     text-align: center;
+}
+
+.img-offre{
     padding: 10px;
     border: 1px solid rgba(#000, .15);
+    display: inline-block;
+    margin: 0 auto 50px;
     
     .border-offre{
         background-color: #ebebeb;
@@ -54,4 +58,59 @@
 .img-presta{
     padding: 10px;
     border: 1px solid rgba(#000, .15);
+}
+
+.tab-menu{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 75px;
+    
+    li{
+        font-family: "Madre-script";
+        font-size: 3rem;
+        width: 50%;
+        text-align: center;
+        
+        &:not(.active){
+            
+            &:hover a{
+                color: rgba(#000, .7);
+                background-color: #f2f2f2;
+            }
+            
+            a{
+                color: rgba(#000, .3);
+            }
+        }
+        
+        a{
+            transition: all ease .3s;
+            display: block;
+            color: inherit;
+            padding: 25px 30px 15px;
+            text-decoration: none;
+            background-color: #EBEBEB;
+            border-bottom:1px solid $primaire;
+        }
+        
+        &.active a{
+            background-color: #fff;
+            border-bottom: 0;
+            border-top: 5px solid $primaire;
+            border-right: 1px solid $primaire;
+            border-left: 1px solid $primaire;
+            padding: 30px 30px 20px;
+            
+            span{
+                color: $primaire;
+            }
+        }
+    }
+}
+
+.tab-content{
+    .tab{
+        display: none;
+    }
 }
