@@ -60,3 +60,29 @@
     }
     
 }
+
+.single-post{
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .wp-caption{
+        max-width: 100%;
+        
+        img{
+            margin: 30px auto 10px
+        }
+    }
+    
+    img{
+        margin: 30px auto;
+    }
+    
+    .wp-caption-text{
+        font-family: 'chaparral-pro';
+            font-size: 1.5rem;
+            color: #a0a0a0;
+    }
+}

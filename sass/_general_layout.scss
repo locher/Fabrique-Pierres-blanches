@@ -65,7 +65,9 @@ img{
     }
     
     .current_page_item a,
-    .current-page-ancestor a{
+    .current-page-ancestor a,
+    .current_page_parent a,
+    .current-menu-item a{
         color: $primaire;        
         border-bottom: 2px solid $primaire;
     }
