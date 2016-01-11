@@ -1,0 +1,61 @@
+.wpcf7-form{
+    
+    max-width: 800px;
+    margin: 50px auto 0;
+    
+    input[type="email"],
+    textarea{
+        border: 1px solid rgba(#000, .15);
+        border-radius: 5px;
+        padding: 15px;
+        min-width: 50%;
+        font-family: inherit;
+        font-size: 1.5rem;
+        line-height: 1.4em;
+    }
+    
+    label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    
+    .bt{
+        border:none;
+        background-color: $primaire;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    textarea{
+        width: 100%;
+        resize: vertical;
+    }
+    
+    p{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    // Validation CF7
+    .wpcf7-response-output{
+        display: inline-block;
+        margin-top: 0;
+        border:0;
+        padding: 15px;
+        border-radius: 5px;
+            
+    }
+    
+    .wpcf7-validation-errors{
+        background-color: #f1e475;
+    }
+    
+    .wpcf7-mail-sent-ok{
+         background-color: #8ded73;
+    }
+}
+
+
+

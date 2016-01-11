@@ -53,4 +53,23 @@ h2{
     strong{
         font-weight: bold;
     }
+    
+    em{
+        font-style: italic;
+    }
+    
+    a{
+        transition: color ease .2s;
+        color: $primaire;
+        
+        &:hover{
+            color: darken($primaire, 20%);
+        }
+        
+        &[href^="mailto:"]{
+            font-family: 'chaparral-pro';
+            font-size: 2.5rem;
+            line-height: 2em;
+        }
+    }
 }
