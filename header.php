@@ -34,7 +34,12 @@
 					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+							<img
+							    src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg"
+							    srcset="<?php echo get_template_directory_uri(); ?>/img/logo@2x.jpg 2x,
+							    <?php echo get_template_directory_uri(); ?>/img/logo@3x.jpg 3x" 
+							    alt="Logo" class="logo-img"
+							 >
 						</a>
 					</div>
 					<!-- /logo -->
