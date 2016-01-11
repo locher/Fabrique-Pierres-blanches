@@ -34,6 +34,7 @@ h2{
     
     h2{
         font-size: 3rem;
+        line-height: 1.3em;
     }
     
     h3{
@@ -59,7 +60,7 @@ h2{
     }
     
     a{
-        transition: color ease .2s;
+        transition: all ease .2s;
         color: $primaire;
         
         &:hover{

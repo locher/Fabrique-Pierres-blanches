@@ -91,14 +91,12 @@ function html5blank_nav()
 function html5blank_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
-
-        wp_register_script('myscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('myscripts'); // Enqueue it!
         
         wp_register_script('jquery', get_template_directory_uri() . '/js/lib/jquery-1.11.3.min.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('jquery'); // Enqueue it   
         
-         
+                wp_register_script('news', get_template_directory_uri() . '/js/news.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('news');
     }
 }
 
@@ -114,14 +112,10 @@ function html5blank_conditional_scripts()
         wp_enqueue_script('script_isotope'); // Enqueue it!
     }
     
-    if (is_page_template('template_offres.php')){
-        
+    if (is_page_template('template_offres.php')){        
         wp_register_script('tab-offre', get_template_directory_uri() . '/js/tab-offre.js', array('jquery'), '1.0.0');
         wp_enqueue_script('tab-offre');
-        
-    }
-    
-    
+    }    
 }
 
 // Load HTML5 Blank styles
