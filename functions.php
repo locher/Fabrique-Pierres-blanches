@@ -434,4 +434,27 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+
+class MyWalker extends Walker_Category {
+ 
+    function start_el(&$output, $category, $depth, $args) {
+        extract($args);
+
+        $cat_name = esc_attr( $category->name );
+        
+        $link = '<a href="%1$s" rel="%2$s">%3$s</a>';
+        
+        $link = sprintf($link
+                            , esc_attr( get_term_link($category) )
+                            , $category->slug
+                            , $cat_name
+                            );
+            
+        $class = $category->slug;
+        $output .= '<li data-cat="'.$class.'">'.$link;
+    }
+}
+
+
+
 ?>
