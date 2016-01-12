@@ -34,17 +34,17 @@
     }
     
     p{
-        text-align: left;
         margin-bottom: 20px;
     }
     
     // Validation CF7
     .wpcf7-response-output{
         display: inline-block;
-        margin-top: 0;
+        margin: 0 auto;
         border:0;
         padding: 15px;
         border-radius: 5px;
+        text-align: center;
             
     }
     
@@ -57,5 +57,7 @@
     }
 }
 
-
+.content-contact{
+    margin-top: 0;
+}
 
