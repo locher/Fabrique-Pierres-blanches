@@ -23,6 +23,7 @@
     border: 1px solid rgba(#000, .15);
     display: inline-block;
     margin: 0 auto 50px;
+    max-width: 100%;
     
     .border-offre{
         background-color: #ebebeb;
@@ -38,6 +39,14 @@
         margin-right: 20px;
         margin-bottom: 75px;
         text-align: center;
+        
+        @include width-below(1200px){
+            width: calc(100% / 2 - 40px / 2); // 40 = 2x la gutter
+        }
+
+        @include width-below(800px){
+            width: 100%; // 40 = 2x la gutter
+        }
         
         &:nth-child(3n){
             margin-right: 0;
@@ -71,6 +80,10 @@
         font-size: 3rem;
         width: 50%;
         text-align: center;
+        
+        @include width-below(500px){
+            font-size: 2rem;
+        }
         
         &:not(.active){
             
