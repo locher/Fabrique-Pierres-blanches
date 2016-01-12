@@ -42,7 +42,13 @@
 							 >
 						</a>
 					</div>
+					
 					<!-- /logo -->
+					
+					<div class="wrapper-button">
+					    <button class="bt-menu bt">Menu</button>
+					</div>
+					
 
 					<!-- nav -->
 					<nav class="nav" role="navigation">

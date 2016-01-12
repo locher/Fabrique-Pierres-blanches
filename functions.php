@@ -95,8 +95,11 @@ function html5blank_header_scripts()
         wp_register_script('jquery', get_template_directory_uri() . '/js/lib/jquery-1.11.3.min.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('jquery'); // Enqueue it   
         
-                wp_register_script('news', get_template_directory_uri() . '/js/news.js', array('jquery'), '1.0.0');
+        wp_register_script('news', get_template_directory_uri() . '/js/news.js', array('jquery'), '1.0.0');
         wp_enqueue_script('news');
+        
+        wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('scripts');
     }
 }
 

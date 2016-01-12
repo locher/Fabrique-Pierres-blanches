@@ -1,10 +1,12 @@
 (function ($, root, undefined) {
 	
 	$(function () {
+        
+        //responsive
 		
-		'use strict';
-		
-		// DOM ready, take it away
+        jQuery('header button').click(function(){
+           jQuery('.nav').toggleClass('open'); 
+        });
 		
 	});
 	
