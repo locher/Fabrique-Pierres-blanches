@@ -27,11 +27,23 @@
         font-size: 5rem;
         color: #fff;
         margin-bottom: 10px;
+        
+        @include width-below(800px){
+            font-size: 4rem;
+        }
+        
+        @include width-below(500px){
+            font-size: 3rem;
+        }
     }
     
     p{
         font-family: 'chaparral-pro';
         font-size: 2.5rem;
+        
+        @include width-below(500px){
+            font-size: 2rem;
+        }
     }
     
     .arabesque{
@@ -57,14 +69,22 @@
 }
 
 .wrapper-cote{
-    width: calc(50% - 10px);
-    
+    width: calc(50% - 10px);    
     border: 1px solid rgba(#000, .15);
     padding: 10px;
     
-    &:nth-child(odd){
-        margin-right: 20px;
+    @include width-below(900px){
+        width: 100%;
+        margin-bottom: 20px;
     }
+    
+    @include width-above(900px){
+        &:nth-child(odd){
+            margin-right: 20px;
+        }
+    }
+    
+
 }
 
 .single-cote{
@@ -90,15 +110,27 @@
     outline: 1px solid #fff;
     outline-offset: 10px;
     
+    @include width-below(1200px){
+        padding: 50px;
+    }
+    
     .h1{
         font-size: 5rem;
         color: $primaire;
         margin-bottom: 10px;
+        
+        @include width-below(1200px){
+            font-size: 4rem;
+        }
     }
     
     p{
         font-family: 'chaparral-pro';
         font-size: 2.5rem;
+        
+        @include width-below(1200px){
+            font-size: 2rem;
+        }
     }
     
     .arabesque{
