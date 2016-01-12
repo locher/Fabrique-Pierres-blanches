@@ -5,7 +5,7 @@
 		$('.list-article').find('h2 a').hover(function(){
             $(this).parent().parent().parent().toggleClass('hover');
         });
-        $('.list-article').find('.bt').hover(function(){
+        $('.list-article').find('.voirplus').hover(function(){
             $(this).parent().parent().toggleClass('hover');
         });
 		

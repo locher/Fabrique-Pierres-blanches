@@ -31,7 +31,7 @@
             <!-- /post details -->        
             <p><?php the_excerpt();?></p>
             
-            <a href="<?php the_permalink();?>" class="bt">Voir la suite</a>
+            <a href="<?php the_permalink();?>" class="voirplus">Voir la suite</a>
         
         </div>
 		
