@@ -71,6 +71,10 @@
         font-size: 5rem;
         text-align: center;
         margin-top: 0;
+        
+        @include width-below(600px){
+            font-size: 3.5rem;
+        }
     }
 }
 
