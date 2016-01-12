@@ -19,24 +19,26 @@ jQuery(document).ready(function(){
     
     // Vérifier l'url    
     
-    /*
-    var hashname = window.location.hash;
+    var $hashname = window.location.hash;
+    
+    console.log($hashname);
 
-    if(hashname == '#celine'){ //tab63
-        jQuery('.tab-content').find('.tab').hide();   
+    
+    
+    if($hashname == '#celine'){ //tab63
+        jQuery('.tab-content').find('.tab61').hide();   
         jQuery('.tab-content').find('.tab63').show();
         jQuery('.tab-menu').find('li').removeClass('active');
-        jQuery('.tab-menu').find('li').attr('data-id','tab63').addClass('active');
-        
+        jQuery('.tab-menu li[data-id="tab63"]').addClass('active');        
     }
     
-    if(hashname == '#mie'){ //tab63
-        jQuery('.tab-content').find('.tab').hide();   
+    
+    if($hashname == '#mie'){ //tab63
+        jQuery('.tab-content').find('.tab63').hide();   
         jQuery('.tab-content').find('.tab61').show();
         jQuery('.tab-menu').find('li').removeClass('active');
-        jQuery('.tab-menu').find('li')..addClass('active');
+        jQuery('.tab-menu li[data-id="tab61"]').addClass('active');
     }
     
-    */
     
 });

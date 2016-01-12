@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="cote-wrapper-bt">
-                    <a href="<?php the_sub_field('lien_bouton');?>" class="bt"><?php the_sub_field('texte_bouton');?></a>
+                    <a href="<?php the_sub_field('lien_bouton');?>#<?php the_sub_field('hash_bouton');?>" class="bt"><?php the_sub_field('texte_bouton');?></a>
                 </div>
             </div>
         </div>
