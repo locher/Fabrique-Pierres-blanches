@@ -113,6 +113,9 @@ function html5blank_conditional_scripts()
         
         wp_register_script('script_isotope', get_template_directory_uri() . '/js/isotope.js', array('jquery'), '1.0.0');
         wp_enqueue_script('script_isotope'); // Enqueue it!
+        
+        wp_register_script('imagesloaded', get_template_directory_uri() . '/js/lib/imagesloaded.pkgd.min.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('imagesloaded'); // Enqueue it!imagesloaded.pkgd.min.js
     }
     
     if (is_page_template('template_offres.php')){        
