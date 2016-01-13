@@ -23,7 +23,12 @@
                 
                 ?>
                 
-                <img src="<?php echo $thumb;?>" alt="">
+                <div>
+                    <div class="img-wrapper">
+                        <img src="<?php echo $thumb;?>" alt="">
+                    </div>
+                </div>
+                
 
                 <?php endwhile;?>
 

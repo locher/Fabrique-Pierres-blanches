@@ -81,9 +81,16 @@
 .img-folio-wrapper{
     margin-top: 50px;
     text-align: center;
+
+    .img-wrapper{
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid rgba(#000, .15);
+        margin-bottom: 30px;
+    }
     
     img{
-        margin-bottom: 30px;
+        //margin-bottom: 30px;
     }
 }
 
