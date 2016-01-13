@@ -28,10 +28,16 @@
        <?php
         while(have_rows('un_cote')) : the_row(); 
         $cote_img = get_sub_field('image_de_fond');
+        
+        // thumbnail
+        $size = 'moyenne';
+        $thumb = $cote_img['sizes'][ $size ];
+        $width = $cote_img['sizes'][ $size . '-width' ];
+        $height = $cote_img['sizes'][ $size . '-height' ];
         ?>
        
        <div class="wrapper-cote">
-            <div class="single-cote" style="background-image: url('<?php echo $cote_img['url']; ?>');">
+            <div class="single-cote" style="background-image: url('<?php echo $thumb; ?>');">
                 <div class="single-cote-text">
                     <h2 class="h1"><?php the_sub_field('titre');?></h2>
                     <p><?php the_sub_field('sous-titre');?></p>
@@ -92,7 +98,7 @@
             <div class="single-folio">
                     
                     <div class="img-folio">
-                        <?php the_post_thumbnail();?>
+                        <?php the_post_thumbnail('petite');?>
                     </div>           
                     
                     <div class="folio-hover">

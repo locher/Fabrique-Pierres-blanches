@@ -14,9 +14,16 @@
                <?php
                 while(have_rows('images_projet')) : the_row(); 
                 $projet_img = get_sub_field('image');
+                
+                // thumbnail
+                $size = 'moyenne';
+                $thumb = $projet_img['sizes'][ $size ];
+                $width = $projet_img['sizes'][ $size . '-width' ];
+                $height = $projet_img['sizes'][ $size . '-height' ];                
+                
                 ?>
                 
-                <img src="<?php echo $projet_img['url'];?>" alt="">
+                <img src="<?php echo $thumb;?>" alt="">
 
                 <?php endwhile;?>
 

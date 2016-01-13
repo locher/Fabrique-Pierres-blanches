@@ -50,11 +50,20 @@
                     <div class="wrapper-offres">
 
                     <?php while(have_rows('prestations')) : the_row(); ?>
-                    <?php $prestation_img = get_sub_field('image_prestation'); ?>		    
+                    <?php $prestation_img = get_sub_field('image_prestation'); ?>
+                    <?php 
+                        // thumbnail
+                        $size = 'moyenne';
+                        $thumb = $prestation_img['sizes'][ $size ];
+                        $width = $prestation_img['sizes'][ $size . '-width' ];
+                        $height = $prestation_img['sizes'][ $size . '-height' ];
+                    ?>
+                        
+                        	    	    
 
                         <div class="single-presta">
                             <div class="img-presta">
-                                <img src="<?php echo $prestation_img['url']; ?>" alt="">
+                                <img src="<?php echo $thumb; ?>" alt="">
                             </div>
                             <h3><?php the_sub_field('titre_prestation'); ?></h3>
                             <p><?php the_sub_field('texte_prestation'); ?></p>

@@ -53,7 +53,7 @@
             <div class="single-folio <?php foreach($table_cat as $table_cat) echo($table_cat).' ';?>" data-cat="<?php foreach($table_cat as $table_cat) echo($table_cat).' ';?>">
                     
                     <div class="img-folio">
-                        <?php the_post_thumbnail();?>
+                        <?php the_post_thumbnail('petite');?>
                     </div>           
                     
                     <div class="folio-hover">
