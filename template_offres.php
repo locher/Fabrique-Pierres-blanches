@@ -20,6 +20,15 @@
 
             <?php while ($offres->have_posts()) : $offres->the_post(); ?>
             
+            <?php $offre_img = get_field('image'); ?>
+            <?php 
+                // thumbnail
+                $size = 'grande';
+                $thumb = $offre_img['sizes'][ $size ];
+                $width = $offre_img['sizes'][ $size . '-width' ];
+                $height = $offre_img['sizes'][ $size . '-height' ];
+            ?>
+            
             <div class="tab tab<?php echo $post->ID;?>">
 
                 <div class="header-offre">
@@ -29,9 +38,9 @@
 
                 <div class="wrapper-img-offre">
                     <div class="img-offre">
-                        <?php $offre_img = get_field('image'); ?>
+                        
                         <div class="border-offre">
-                            <img src="<?php echo $offre_img['url']; ?>" alt="">
+                            <img src="<?php echo $thumb; ?>" alt="">
                         </div>		    
                     </div>
                 </div>
