@@ -7,7 +7,7 @@
             <?php if (has_post_thumbnail() && !post_password_required()): ?>
                 <?php
                     $thumb_id = get_post_thumbnail_id();
-                    $thumb_url_array = wp_get_attachment_image_src($thumb_id, '', true);
+                    $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'petite', true);
                     $thumb_url = $thumb_url_array[0];
 				?>
 				<div class="wrapper-img">
