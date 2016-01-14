@@ -12,11 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<?php wp_head(); ?>
-		
-        <!--Typekit-->
-		<script src="https://use.typekit.net/dfj5rwt.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<?php wp_head(); ?>       
 		
 	</head>
 	<body <?php body_class(); ?>>

@@ -8,6 +8,10 @@
 		</footer>
 
 		<?php wp_footer(); ?>
+		
+		<!--Typekit-->
+		<script src="https://use.typekit.net/dfj5rwt.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 
 	</body>
