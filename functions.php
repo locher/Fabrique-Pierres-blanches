@@ -99,6 +99,9 @@ function html5blank_header_scripts()
         
         wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0');
         wp_enqueue_script('scripts');
+        
+        wp_register_script('piwik', get_template_directory_uri() . '/js/piwik.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('piwik');
     }
 }
 
