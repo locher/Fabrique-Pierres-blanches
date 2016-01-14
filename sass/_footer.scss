@@ -1,0 +1,24 @@
+footer{
+    background-color: rgba(#000,.05);
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 50px;
+    color: rgba(#000, .4);
+    
+    ul{
+        display: inline;
+        
+        li{
+            display: inline;
+            
+            a{
+                transition: all ease .3s;
+                color: inherit;
+                
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
