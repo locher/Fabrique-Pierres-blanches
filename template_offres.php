@@ -62,8 +62,8 @@
                         	    	    
 
                         <div class="single-presta">
-                            <div class="img-presta">
-                                <img src="<?php echo $thumb; ?>" alt="">
+                            <div class="img-presta-wrapper">
+                                <div class="img-presta" style="background-image: url('<?php echo $thumb;?>');"></div>
                             </div>
                             <h3><?php the_sub_field('titre_prestation'); ?></h3>
                             <p><?php the_sub_field('texte_prestation'); ?></p>
